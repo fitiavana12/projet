@@ -1,9 +1,3 @@
-rmse
-runfile('C:/Users/NewUser/.spyder-py3/sanstitre0.py', wdir='C:/Users/NewUser/.spyder-py3')
-runfile('C:/Users/NewUser/.spyder-py3/sanstitre1.py', wdir='C:/Users/NewUser/.spyder-py3')
-
-## ---(Mon Apr  3 13:19:16 2023)---
-runfile('C:/Users/NewUser/.spyder-py3/sanstitre0.py', wdir='C:/Users/NewUser/.spyder-py3')
 runfile('C:/Users/NewUser/.spyder-py3/calcul.py', wdir='C:/Users/NewUser/.spyder-py3')
 runfile('C:/Users/NewUser/.spyder-py3/sanstitre1.py', wdir='C:/Users/NewUser/.spyder-py3')
 runfile('C:/Users/NewUser/.spyder-py3/calcul.py', wdir='C:/Users/NewUser/.spyder-py3')
@@ -102,3 +96,12 @@ runfile('C:/Users/NewUser/.spyder-py3/projet.py', wdir='C:/Users/NewUser/.spyder
 
 ## ---(Fri May 12 13:21:41 2023)---
 runfile('C:/Users/NewUser/.spyder-py3/projet.py', wdir='C:/Users/NewUser/.spyder-py3')
+
+## ---(Sat May 13 11:09:43 2023)---
+runfile('C:/Users/NewUser/.spyder-py3/projet.py', wdir='C:/Users/NewUser/.spyder-py3')
+
+## ---(Sat May 13 19:06:09 2023)---
+runfile('C:/Users/NewUser/.spyder-py3/projet.py', wdir='C:/Users/NewUser/.spyder-py3')
+runfile('C:/Users/NewUser/.spyder-py3/projet1.py', wdir='C:/Users/NewUser/.spyder-py3')
+runfile('C:/Users/NewUser/.spyder-py3/projet.py', wdir='C:/Users/NewUser/.spyder-py3')
+runfile('C:/Users/NewUser/.spyder-py3/projet1.py', wdir='C:/Users/NewUser/.spyder-py3')

@@ -78,4 +78,4 @@ x_train_s = scaler.fit_transform(x_train)
 x_test_s = scaler.transform(x_test)
 
 
-#print(x_train)
+print(x_train)

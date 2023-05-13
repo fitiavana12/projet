@@ -70,8 +70,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.svm import svr
-from sklearn.ensemble import RandomForestRegressor
+#from sklearn.svm import svr
+#from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import StandardScaler
 
 
@@ -97,8 +97,12 @@ train_data['households'] = np.log(train_data['households'] + 1)
 
 #train_data.hist(figsize=(15,8))
 
+
+
 #print(train_data.ocean_proximity.value_counts())
-train_data = train_data.join(pd.get_dummies(train_data.ocean_proximity)).drop(['ocean_proximity'], axis = 1)
+#train_data = train_data.join(pd.get_dummies(train_data.ocean_proximity)).drop(['ocean_proximity'], axis = 1)
+train_data = pd.get_dummies(train_data, columns=['ocean_proximity'], prefix='ocean_proximity')
+
 plt.figure(figsize=(15,8))
 sns.scatterplot(x="latitude", y="longitude", data = train_data, hue="median_house_value", palette="coolwarm")
 
@@ -107,10 +111,12 @@ train_data['houseold_rooms'] = train_data['total_rooms'] / train_data['household
 plt.figure(figsize=(15,8))
 sns.heatmap(train_data.corr(), annot=True, cmap="YlOrBr")
 
-scaler = standardScaler()
+scaler = StandardScaler()
 
 x_train, y_train = train_data.drop(['median_house_value'], axis=1), train_data['median_house_value']
 x_train_s = scaler.fit_transform(x_train)
+x_test_s = scaler.transform(x_test)
+
 reg = LinearRegression()
 reg.fit(x_train_s, y_train)
 LinearRegression()
@@ -176,6 +182,8 @@ median_house_value = data_with_new_row['median_house_value'].median()
 
 # Afficher la valeur médiane de la maison pour les facteurs entrés
 print("La valeur médiane de la maison pour les facteurs entrés est :", median_house_value)
+
+
 
 
 
